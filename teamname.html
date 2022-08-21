@@ -16,10 +16,10 @@
   </head>
   <body>
     <div class="container">
-      <form class="no-gutters">
-        <div class="row">
-          <div class="col-md-5 mb-4 row">
-            <div class="col-md-4 pr-3">
+      <div class="row">
+        <div class="col-md-5 mb-4 row">
+          <div class="col-md-4 pr-3">
+            <form class="no-gutters">
               <label for="">Team</label>
               <select class="form-control" style="width: 100%">
                 <option selected>All Teams</option>
@@ -27,8 +27,11 @@
                 <option value="2">Role2</option>
                 <option value="3">Role3</option>
               </select>
-            </div>
-            <div class="col-md-8 pr-3">
+            </form>
+          </div>
+
+          <div class="col-md-8 pr-3">
+            <form class="no-gutters">
               <label for="">Milestone</label>
               <select class="form-control" style="width: 100%">
                 <option selected>Milestone Name2</option>
@@ -36,10 +39,11 @@
                 <option value="2">Role2</option>
                 <option value="3">Role3</option>
               </select>
-            </div>
+            </form>
           </div>
         </div>
-      </form>
+      </div>
+
       <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
