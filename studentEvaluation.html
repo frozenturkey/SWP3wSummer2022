@@ -25,12 +25,13 @@
             </div>
             <div class="container p-5 card">
                 <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a data-toggle="tab" class="nav-link active" href="#home"><icon class="fa fa-home"></icon> LOC Evaluation</a>
-                    </li>
+                    
                     <li class="nav-item">
                       <a data-toggle="tab" class="nav-link" href="#profile"><i class="fa fa-user"></i> Evaluations </a>
                     </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link active" href="#home"><icon class="fa fa-home"></icon> LOC Evaluation</a>
+                      </li>
                   </ul>
                     <!-- Tab panes -->
                     <div class="tab-content ">
@@ -98,63 +99,178 @@
                    
                         <div class="tab-pane fade py-3" id="profile">
                             
-                            <table class="display table table-bordered" cellspacing="0" width="100%">
-                                <form>
-                                <thead class="thead-light">
-                                    <tr>
-                                      <th scope="col">Id</th>
-                                      <th scope="col">Function</th>
-                                      <th scope="col">Complexity</th>
-                                      <th scope="col">Quality</th>
-                                      <th scope="col">LOC</th>
-                                      <th scope="col">Action</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <th scope="row">12</th>
-                                      <td>Cell Content</td>
-                                      <td>Otto</td>
-                                      <td>@mdo</td>
-                                      <td>@mdo</td>
-                                      <td>
-                                          <button type="button" class="btn btn-link ">Update</button>
-                                      </td>     
-                                    </tr>
-                                    <tr>
-                                      <th scope="row">24</th>
-                                      <td>Cell Content</td>
-                                      <td>Otto</td>
-                                      <td>@mdo</td>
-                                      <td>@mdo</td>
-                                      <td>
-                                          <button type="button" class="btn btn-link ">Update</button>
-                                      </td>     
-                                    </tr>
-                                    <tr>
-                                      <th scope="row">26</th>
-                                      <td>Cell Content</td>
-                                      <td>Otto</td>
-                                      <td>@mdo</td>
-                                      <td>@mdo</td>
-                                      <td>
-                                          <button type="button" class="btn btn-link ">Update</button>
-                                      </td>     
-                                    </tr>
-                                    <tr>
-                                      <th scope="row">27</th>
-                                      <td>Cell Content</td>
-                                      <td>Otto</td>
-                                      <td>@mdo</td>
-                                      <td>@mdo</td>
-                                      <td>
-                                          <button type="button" class="btn btn-link ">Update</button>
-                                      </td>     
-                                    </tr>
-                                    
-                                  </tbody>
-                                </form>
-                            </table>
+                            <div class="container">
+                                <div class="accordion" id="accordionExample">
+                                  <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                      <div class="mb-0 row form-group">
+                                        <div class="col-md-9">
+                                          <button
+                                            class="btn btn-link btn-inline text-left"
+                                            type="button"
+                                            data-toggle="collapse"
+                                            data-target="#collapseOne"
+                                            aria-expanded="true"
+                                            aria-controls="collapseOne"
+                                          >
+                                            Team Evaluation
+                                          </button>
+                                        </div>
+                                        <div class="col-md-3"><h5>6/10</h5></div>
+                                      </div>
+                                    </div>
+                          
+                                    <div
+                                      id="collapseOne"
+                                      class="collapse"
+                                      aria-labelledby="headingOne"
+                                      data-parent="#accordionExample"
+                                    >
+                                      <div class="card-body">
+                                        <form>
+                                          <div class="form-inline ml-3 row">
+                                            <div class="col-md-9">
+                                              <h4 class="font-italic">
+                                                Criteria Name 1 (<span>25%</span>)
+                                              </h4>
+                                            </div>
+                          
+                                            <div class="input-group form-inline">
+                                              <div class="input-group-prepend">
+                                                <div class="input-group-text">Grade/10</div>
+                                              </div>
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                style="width: 60px"
+                                                value="7.5"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div style="width: 96%; margin: 20px 30px">
+                                            <input
+                                              type="text"
+                                              value="Gradings comments for criteria_name1"
+                                              class="form-control"
+                                            />
+                                          </div>
+                                          <div class="form-inline ml-3 row">
+                                            <div class="col-md-9">
+                                              <h4 class="font-italic">
+                                                Criteria Name 1 (<span>25%</span>)
+                                              </h4>
+                                            </div>
+                          
+                                            <div class="input-group form-inline">
+                                              <div class="input-group-prepend">
+                                                <div class="input-group-text">Grade/10</div>
+                                              </div>
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                style="width: 60px"
+                                                value="9"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div style="width: 96%; margin: 20px 30px">
+                                            <input
+                                              type="text"
+                                              value="Gradings comments for criteria_name1"
+                                              class="form-control"
+                                            />
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                  <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                      <div class="mb-0 row form-group">
+                                        <div class="col-md-9">
+                                          <button
+                                            class="btn btn-link btn-inline text-left"
+                                            type="button"
+                                            data-toggle="collapse"
+                                            data-target="#collapseTwo"
+                                            aria-expanded="true"
+                                            aria-controls="collapseTwo"
+                                          >
+                                            Individual Evaluation
+                                          </button>
+                                        </div>
+                                        <div class="col-md-3"><h5>7/10</h5></div>
+                                      </div>
+                                    </div>
+                          
+                                    <div
+                                      id="collapseTwo"
+                                      class="collapse show"
+                                      aria-labelledby="headingOne"
+                                      data-parent="#accordionExample"
+                                    >
+                                      <div class="card-body">
+                                        <form>
+                                          <div class="form-inline ml-3 row">
+                                            <div class="col-md-9">
+                                              <h4 class="font-italic">
+                                                Criteria Name3 (<span>25%</span>)
+                                              </h4>
+                                            </div>
+                          
+                                            <div class="input-group form-inline">
+                                              <div class="input-group-prepend">
+                                                <div class="input-group-text">Grade/10</div>
+                                              </div>
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                style="width: 60px"
+                                                value="7.5"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div style="width: 96%; margin: 20px 30px">
+                                            <input
+                                              type="text"
+                                              value="Gradings comments for criteria_name1"
+                                              class="form-control"
+                                            />
+                                          </div>
+                                          <div class="form-inline ml-3 row">
+                                            <div class="col-md-9">
+                                              <h4 class="font-italic">
+                                                Criteria Name5 (<span>25%</span>)
+                                              </h4>
+                                            </div>
+                          
+                                            <div class="input-group form-inline">
+                                              <div class="input-group-prepend">
+                                                <div class="input-group-text">Grade/10</div>
+                                              </div>
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                style="width: 60px"
+                                                value="9"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div style="width: 96%; margin: 20px 30px">
+                                            <input
+                                              type="text"
+                                              value="Gradings comments for criteria_name1"
+                                              class="form-control"
+                                            />
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                         
                   
